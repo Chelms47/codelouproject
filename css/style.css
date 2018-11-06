@@ -10,10 +10,11 @@ background-position: 0 0;;*/
 }
 h1 {
     color: #0faa7660;
-    text-transform: uppercase;
+    text-transform: lowercase;
     text-shadow: 3px 2px #ffaa80
 }
-p {
+p.normal {
+    font-family: "Verdana";
     color: #ffaa80;
     text-align: center;
 }
