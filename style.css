@@ -11,7 +11,7 @@ background: grey;*/
 
 }
 .abt-me {
-align-content: center;
+    align-content: center;
 }
 h1 {
     color: white;
@@ -39,15 +39,42 @@ ul {
     border: 2px 3px #ffaa80;
 }
 li { 
-    display: inline;
-    float: right;
+    display: flex;
     padding: 5px;
 }
-.active {
-    background-color: white;
-    color: darkgrey;
 }
 li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+/* Large */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* This aligns items to the end line on main-axis */
+    justify-content: flex-end;
+  }
+  
+  /* Medium screens */
+  @media all and (max-width: 800px) {
+    .navigation {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+  
+  /* Small screens */
+  @media all and (max-width: 500px) {
+    .navigation {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
