@@ -1,0 +1,19 @@
+body {
+/*
+for photo background
+NEED TO ADD PHOTO TO THIS FILE
+background-color: lightgrey;
+background-image: url("..);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: 0 0;;*/
+}
+h1 {
+    color: #0faa7660;
+    text-transform: uppercase;
+    text-shadow: 3px 2px #ffaa80
+}
+p {
+    color: #ffaa80;
+    text-align: center;
+}
