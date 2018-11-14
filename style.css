@@ -2,6 +2,11 @@
 
 .abt-me {
     align-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body {
+    
 }
 h1 {
     color: white;
@@ -14,17 +19,17 @@ p {
     column-count: 2;
     column-gap: 3em
 
-
 }
 /*navigation*/
 a {
-    color: white;
+    color: #ffaa80;
     text-decoration: none;
+    border: 2px dashed #ffaa80;
 }
 ul {
-    list-style-type: none;
+    display: inline-flex;
     margin: 0;
-    padding: 0;
+    padding: 0px 10px;
     color: white;
     border: 2px 3px #ffaa80;
 }
@@ -37,14 +42,9 @@ li a:hover:not(.active) {
     background-color: #555;
     color: white;
 }
-.rotate90 {
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-}
-/* Large */
+
+
+/* Large screens */
 .navigation {
     display: flex;
     flex-direction: row;
